@@ -295,6 +295,90 @@ button:focus {
     color: #13386fe0;
 }
 
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -12.9%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -10%;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+#timeline-divider i {
+    transform: rotate(90deg);
+  	margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+#timeline-divider{
+    position: absolute;
+    border: 2px dotted black;
+    width: 0;
+    height: 75%;
+    top: 8%;
+    left: 50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+.timeline-container{
+    padding: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.timeline-box-logo img{
+    width: 50%;
+    height: 60%;
+}
+.education-qualification{
+    font-size: 1.2rem;
+    /* color: #2857a4; */
+    margin: 0;
+}
+.institute-name{
+    margin: 5px 0 0;
+    /* color: #eb822d; */
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.year-passing{
+    font-weight: 100;
+    /* color: grey; */
+    font-size: 1rem;
+    margin: 0;
+}
+
 
 /*Common color*/
 .mb-blue {
@@ -310,6 +394,18 @@ button:focus {
 
 .mb-light-purple {
     background-color: #93738c;
+}
+
+.grey{
+    color: grey;
+}
+
+.blue{
+    color: #2857a4;;
+}
+
+.orange{
+    color: #ec4d1c;
 }
 
 /*Common margin*/
